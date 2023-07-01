@@ -1,6 +1,6 @@
 // Start listening on port 8080 of localhost.
-const server = Deno.listen({ port: 8080 });
-console.log("File server running on http://localhost:8080/");
+const server = Deno.listen({ port: 4057 });
+console.log("File server running on http://localhost:4057/");
 
 for await (const conn of server) {
   handleHttp(conn).catch(console.error);
